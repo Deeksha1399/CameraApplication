@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Camera Application</string>
+    <string name="capture">Capture</string>
+    <string name="show_images">Show Images</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

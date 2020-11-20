@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaptureImageActivity">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_margin="16dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/btn_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capture"
+        android:layout_below="@+id/image_view"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_images"
+        android:layout_below="@+id/btn_capture"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/image_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/btn_display"/>
+
+
+</RelativeLayout>
